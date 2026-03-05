@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="https://bit.ly/2GNRwtz" sizes="32x32" />
@@ -14,6 +13,164 @@
   <link href="css/aos.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
+  <style>
+    /* Perbaikan ukuran website dan tata letak proyek */
+    body {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 960px;
+    }
+    
+    /* Perbaikan tata letak bagian proyek */
+    #proyek {
+      padding: 50px 0;
+    }
+    
+    #proyek .container {
+      max-width: 1200px;
+    }
+    
+    #proyek .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    #proyek .col-md-5 {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      margin-bottom: 0;
+    }
+    
+    #proyek .card {
+      height: 100%;
+      transition: all 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    #proyek .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    
+    #proyek .card-img-top {
+      height: 220px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    #proyek .card-img-top:hover {
+      transform: scale(1.05);
+    }
+    
+    #proyek .card-body {
+      padding: 20px;
+    }
+    
+    #proyek .card-title {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #378C3F;
+      font-weight: 600;
+    }
+    
+    #proyek .card-text {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+    
+    /* Modal untuk preview gambar */
+    .image-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      animation: fadeIn 0.3s;
+    }
+    
+    .modal-content {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 900px;
+      height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .modal-image {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .close-modal:hover {
+      color: #bbb;
+    }
+    
+    @keyframes fadeIn {
+      from {opacity: 0}
+      to {opacity: 1}
+    }
+    
+    /* Responsivitas untuk proyek */
+    @media (max-width: 768px) {
+      #proyek .col-md-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      
+      #proyek .card-img-top {
+        height: 200px;
+      }
+    }
+    
+    /* Perbaikan ukuran section lainnya */
+    .section {
+      padding: 40px 0;
+    }
+    
+    .page-header {
+      max-height: 600px;
+    }
+    
+    .cc-profile-image img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .cc-profile-image a:before {
+      width: 150px;
+      height: 150px;
+      border-width: 12px;
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -35,7 +192,6 @@
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Pengalaman</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Pendidikan</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Kontak</a></li>
-             
             </ul>
           </div>
         </div>
@@ -52,22 +208,19 @@
               <div class="content-center">
                 <div class="cc-profile-image"><a href="#"><img src="images/WhatsApp Image 2025-10-16 at 10.41.48_a7d71af8.jpg" alt="Image" /></a></div>
                 <div class="h2 title">Raihani Salsabila</div>
-                <p class="category text-white">Desig</p>
+                <p class="category text-white">Design</p>
               </div>
             </div>
             <div class="section">
               <div class="container">
                 <div class="button-container">
-
                   <a target="black" class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://x.com/raiiraii2328?t=M-TMjoMTlZ0BeIHzqJgt_A&s=09" rel="tooltip"
-                    title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
+                    href="https://www.linkedin.com/in/raihani-salsabila-azzahra-b1393738a" rel="tooltip"
+                    title="Connect with me on LinkedIn"><i class="fa fa-linkedin"></i></a>
 
                   <a target="black" class="btn btn-default btn-round btn-lg btn-icon"
                     href="https://www.instagram.com/raihani547?igsh=dWswMHF3Mzk5azFw" rel="tooltip"
                     title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
-
-
                 </div>
               </div>
             </div>
@@ -83,10 +236,10 @@
                     <p>Hallo, saya Raihani Salsabila Azzahra <br></p>
                     <p>
                       Seorang yang memiliki ketertarikan dalam design antarmuka dan pengembangan 
-                      website. Pribadi yang senang bolajar hal baru, disiplin, bertanggung jawab, aktif dalam berbagai
+                      website. Pribadi yang senang belajar hal baru, disiplin, bertanggung jawab, aktif dalam berbagai
                       kegiatan
                       dan memiliki semangat tinggi dalam mengembangkan kemampuan 
-                      di bidang teknologi, desain grafis dan dokumentasi</a></p>
+                      di bidang teknologi, desain grafis dan dokumentasi</p>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -117,138 +270,148 @@
         <div class="section" id="skill">
           <div class="container">
             <div class="h4 text-center mb-4 title">SKIL</div>
-
+            
             <!-- Hard Skills -->
-            <!-- Hard Skills -->
-<!-- Hard Skills -->
-<div class="card mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-  <div class="card-body">
-    <div class="h5 text-center mb-4">Hard Skills</div>
-    <div class="row text-center">
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Desain Grafis</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">UI/UX Design</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Dokumentasi</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Menguasai beberapa bahasa pemograman</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Editing Foto</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Dasar Microsoft Office</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Soft Skills -->
-<div class="card mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-  <div class="card-body">
-    <div class="h5 text-center mb-4">Soft Skills</div>
-    <div class="row text-center">
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">kepemimpinan</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Disiplin</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Menejemen waktu</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Problem solving</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Kerjasama Tim</div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Komunikasi</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-            <!-- Project Saya -->
             <div class="card mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <div class="card-body">
-                 <div class="section" id="proyek">
-          <div class="container">
-            <div class="h4 text-center mb-4 title">PROYEK SAYA</div>
-                <div class="row justify-content-center">
-                  <!-- Project 1 -->
-                  <div class="col-md-5">
-                    <div class="card">
-                      <img src="images/webdes_project.jpg" class="card-img-top" alt="Project Portfolio">
-                      <div class="card-body">
-                        <h6 class="card-title">Website Desa Panawangan (2024)</h6>
-                        <p class="card-text">Website Desa Panawangan, Kab. Ciamis yang menyajikan informasi
-                          pemerintahan, berita, dan layanan desa secara digital.</p>
-                      </div>
-                    </div>
+                <div class="h5 text-center mb-4">Hard Skills</div>
+                <div class="row text-center">
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Desain Grafis</div>
                   </div>
-                  <!-- Project 2 -->
-                  <div class="col-md-5">
-                    <div class="card">
-                      <img src="images/game_project.jpg" class="card-img-top" alt="Project Kuis Matematika">
-                      <div class="card-body">
-                        <h6 class="card-title">Quis Matematika untuk SMK/SMA (2024)</h6>
-                        <p class="card-text">Dirancang untuk
-                          meningkatkan pemahaman matematika dengan cara yang menyenangkan dan visual menarik.</p>
-                      </div>
-                    </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">UI/UX Design</div>
                   </div>
-                   <!-- Project 1 -->
-                  <div class="col-md-5">
-                    <div class="card">
-                      <img src="images/Screenshot 2025-10-16 095228.png" class="card-img-top" alt="Project Portfolio">
-                      <div class="card-body">
-                        <h6 class="card-title">Website Rental Motor (2025)</h6>
-                        <p class="card-text">Website Rental Motor yang menyediakan layanan penyewaan motor secara mudah, cepat, dan terpercaya dengan informasi harga, jenis kendaraan, serta pemesanan online.</p>
-                      </div>
-                    </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Dokumentasi</div>
                   </div>
-                     <!-- Project 2 -->
-                  <div class="col-md-5">
-                    <div class="card">
-                      <img src="images/lb.png" class="card-img-top" alt="Project Kuis Matematika">
-                      <div class="card-body">
-                        <h6 class="card-title">Website Toko Online (2025)</h6>
-                        <p class="card-text">toko online yang menyediakan berbagai produk fashion dan aksesoris kekinian dengan tampilan elegan, sistem belanja mudah, serta layanan pelanggan yang responsif.</p>
-                      </div>
-                    </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Menguasai beberapa bahasa pemograman</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Editing Foto</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Dasar Microsoft Office</div>
                   </div>
                 </div>
               </div>
             </div>
             
-
+            <!-- Soft Skills -->
+            <div class="card mt-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div class="card-body">
+                <div class="h5 text-center mb-4">Soft Skills</div>
+                <div class="row text-center">
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">kepemimpinan</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Disiplin</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Menejemen waktu</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Problem solving</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Kerjasama Tim</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="rounded p-3" style="background-color: #f8f9fa; border: 2px solid #dee2e6;">Komunikasi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project Saya -->
+        <div class="section" id="proyek">
+          <div class="container">
+            <div class="h4 text-center mb-4 title">PROYEK SAYA</div>
+            <div class="row">
+              <!-- Project 1 -->
+              <div class="col-md-5">
+                <div class="card" data-aos="fade-up">
+                  <img src="images/IMG_20260305_210332.jpg" class="card-img-top" alt="Feed Instagram" onclick="openImageModal(this.src)">
+                  <div class="card-body">
+                    <h6 class="card-title">Feed Instagram</h6>
+                    <p class="card-text">Desain feed Instagram yang menarik dan konsisten dengan tema visual yang harmonis. Menggunakan kombinasi warna dan tipografi yang sesuai untuk meningkatkan engagement dan brand awareness.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="col-md-5">
+                <div class="card" data-aos="fade-up">
+                  <img src="images/IMG_20260305_210502.jpg" class="card-img-top" alt="Desain Hari Raya" onclick="openImageModal(this.src)">
+                  <div class="card-body">
+                    <h6 class="card-title">Desain Hari Raya</h6>
+                    <p class="card-text">Desain grafis bertema hari raya dengan nuansa budaya yang kental. Menggunakan elemen-elemen tradisional dan warna yang sesuai dengan perayaan untuk menciptakan desain yang berkesan dan sakral.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="col-md-5">
+                <div class="card" data-aos="fade-up">
+                  <img src="images/IMG-20260209-WA0001.jpg" class="card-img-top" alt="Desain Wire Frame" onclick="openImageModal(this.src)">
+                  <div class="card-body">
+                    <h6 class="card-title">Desain Wire Frame</h6>
+                    <p class="card-text">Pembuatan wireframe untuk website rental motor yang dirancang dengan fokus pada user experience. Struktur navigasi yang jelas dan layout yang intuitif untuk kemudahan pengguna dalam menyewa motor.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 4 -->
+              <div class="col-md-5">
+                <div class="card" data-aos="fade-up">
+                  <img src="images/IMG_20260305_210559.jpg" class="card-img-top" alt="Desain Sertifikat dan Logo" onclick="openImageModal(this.src)">
+                  <div class="card-body">
+                    <h6 class="card-title">Desain Sertifikat dan Logo Kejuaraan</h6>
+                    <p class="card-text">Desain profesional untuk sertifikat dan logo kejuaraan. Menciptakan identitas visual yang kuat dan berkesan untuk event kompetisi dengan desain yang elegan dan mudah diingat.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 5 -->
+              <div class="col-md-5">
+                <div class="card" data-aos="fade-up">
+                  <img src="images/20260305_205047_0000.png" class="card-img-top" alt="Desain Maskot" onclick="openImageModal(this.src)">
+                  <div class="card-body">
+                    <h6 class="card-title">Desain Maskot</h6>
+                    <p class="card-text">Pembuatan desain maskot yang unik dan menarik untuk merek atau acara. Maskot dirancang dengan karakter yang kuat dan mudah dikenali untuk mewakili identitas brand dengan cara yang friendly.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 6 -->
+              <div class="col-md-5">
+                <div class="card" data-aos="fade-up">
+                  <img src="images/IMG_20260305_211154.jpg" class="card-img-top" alt="Desain Poster" onclick="openImageModal(this.src)">
+                  <div class="card-body">
+                    <h6 class="card-title">Desain Poster</h6>
+                    <p class="card-text">Desain poster yang informatif dan eye-catching untuk berbagai keperluan promosi. Menggunakan prinsip desain visual yang efektif untuk menyampaikan pesan dengan jelas dan menarik perhatian audience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
- <div class="section" id="experience">
+        <div class="section" id="experience">
           <div class="container cc-experience">
             <div class="h4 text-center mb-4 title">PENGALAMAN PELATIHAN</div>
             <div class="card">
               <div class="row">
                 <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body cc-experience-header">
-                    <div class="h5">Magang di PT. INOVINDO DIGITAL MEDIA (2025-2026)
-                    </div>
+                    <div class="h5">Magang di PT. INOVINDO DIGITAL MEDIA (2025-2026)</div>
                   </div>
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body">
                     <div class="h5">Ketua Tim</div>
                     <p>
-                   Mengikuti kegiatan magang selama 4 bulan di PT. Inovindo Digital Media. Selama magang, terlibat dalam berbagai kegiatan pengembangan proyek berbasis teknologi dan digital marketing. Mengasah kemampuan kerja tim, komunikasi profesional, 
-                   serta pemahaman terhadap alur kerja industri digital.
+                      Mengikuti kegiatan magang selama 4 bulan di PT. Inovindo Digital Media. Selama magang, terlibat dalam berbagai kegiatan pengembangan proyek berbasis teknologi dan digital marketing. Mengasah kemampuan kerja tim, komunikasi profesional, 
+                      serta pemahaman terhadap alur kerja industri digital.
                     </p>
                   </div>
                 </div>
@@ -258,17 +421,15 @@
               <div class="row">
                 <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body cc-experience-header">
-                    <div class="h5">AI Bootcamp (2024)
-</div>
+                    <div class="h5">AI Bootcamp (2024)</div>
                   </div>
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body">
                     <div class="h5">Peserta</div>
                     <p>
-                     Mengikuti pelatihan intensif mengenai Artificial Intelligence (AI) dan implementasinya di dunia industri. Mempelajari dasar-dasar AI, machine learning, serta penerapannya dalam pengembangan sistem cerdas. Melatih kemampuan berpikir analitis dan pemecahan masalah berbasis teknologi modern.
+                      Mengikuti pelatihan intensif mengenai Artificial Intelligence (AI) dan implementasinya di dunia industri. Mempelajari dasar-dasar AI, machine learning, serta penerapannya dalam pengembangan sistem cerdas. Melatih kemampuan berpikir analitis dan pemecahan masalah berbasis teknologi modern.
                     </p>
-
                   </div>
                 </div>
               </div>
@@ -288,7 +449,7 @@
                 </div>
               </div>
             </div>
-             <div class="card">
+            <div class="card">
               <div class="row">
                 <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body cc-experience-header">
@@ -306,7 +467,6 @@
           </div>
         </div>
 
-
         <div class="section" id="experience">
           <div class="container cc-experience">
             <div class="h4 text-center mb-4 title">PENGALAMAN ORGANISASI</div>
@@ -314,17 +474,15 @@
               <div class="row">
                 <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body cc-experience-header">
-                    <div class="h5">EKSTRA KULIKULER IT
-                      (2023-2024)
-                    </div>
+                    <div class="h5">EKSTRA KULIKULER IT (2023-2024)</div>
                   </div>
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                   <div class="card-body">
-                    <div class="h5">Anggita Divisi Desain</div>
+                    <div class="h5">Anggota Divisi Desain</div>
                     <p>
                       Anggota divisi desain di ekstrakurikuler IT, berfokus pada pembuatan poster dan kolase untuk
-                      berbagai keperluan desain digital.
+                      berbagai keperluan desain digital.
                     </p>
                   </div>
                 </div>
@@ -344,9 +502,8 @@
                       Mengelola dan mencatat hasil rapat, menyusun laporan kegiatan, dan mengarsipkan dokumen
                       organisasi.
                       Bertanggung jawab dalam komunikasi resmi, penyusunan surat, serta koordinasi dengan
-                      anggota OSIS lainnya.
+                      anggota OSIS lainnya.
                     </p>
-
                   </div>
                 </div>
               </div>
@@ -362,7 +519,7 @@
                   <div class="card-body">
                     <div class="h5">Anggota Divisi Dokumentasi</div>
                     <p>bertugas mendokumentasikan kegiatan serta membuat kolase atau editan foto untuk diunggah ke
-                      Instagram himpunan.</p>
+                      Instagram himpunan.</p>
                   </div>
                 </div>
               </div>
@@ -436,89 +593,95 @@
           </div>
         </div>
 
-          <div class="section" id="contact">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">KONTAK</div>
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="info-container">
-              <div class="info-item">
-                <div class="icon">
-                  <i class="fa fa-envelope"></i>
-                </div>
-                <div class="content">
-                  <h5>Email</h5>
-                  <p>raiiraii2328@gmail.com</p>
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="icon">
-                  <i class="fa fa-phone"></i>
-                </div>
-                <div class="content">
-                  <h5>Telepon</h5>
-                  <p>+6283840536805</p>
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="icon">
-                  <i class="fa fa-map-marker"></i>
-                </div>
-                <div class="content">
-                  <h5>Alamat</h5>
-                  <p>Panawangan, Kab.ciamis, Jawa Barat</p>
+        <div class="section" id="contact">
+          <div class="container">
+            <div class="h4 text-center mb-4 title">KONTAK</div>
+            <div class="card" data-aos="fade-up" data-aos-offset="10">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="info-container">
+                      <div class="info-item">
+                        <div class="icon">
+                          <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="content">
+                          <h5>Email</h5>
+                          <p>raihanisalsabilaazzahra547@gmail.com</p>
+                        </div>
+                      </div>
+                      <div class="info-item">
+                        <div class="icon">
+                          <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="content">
+                          <h5>Telepon</h5>
+                          <p>+6285135252910</p>
+                        </div>
+                      </div>
+                      <div class="info-item">
+                        <div class="icon">
+                          <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="content">
+                          <h5>Alamat</h5>
+                          <p>Panawangan, Kab.ciamis, Jawa Barat</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="name">Nama</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            </form>
-            <div id="form-message" class="mt-3"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  
+  <!-- Modal untuk preview gambar -->
+  <div id="imageModal" class="image-modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeImageModal()">&times;</span>
+      <img class="modal-image" id="modalImage">
+    </div>
+  </div>
 
-          <div class="h4 title text-center">Raihani Salsabila</div>
-          <div class="container text-center">
-
-            <a target="black" class="cc-twitter btn btn-link "
-              href="https://x.com/raiiraii2328?t=M-TMjoMTlZ0BeIHzqJgt_A&s=09"><i class="fa fa-twitter fa-2x "
-                aria-hidden="true"></i></a>
-
-            <a target="black" class="cc-instagram btn btn-link"
-              href="https://www.instagram.com/raihani547?igsh=dWswMHF3Mzk5azFw"><i class="fa fa-instagram fa-2x "
-                aria-hidden="true"></i></a>
-          </div>
-          <div class="text-center text-muted">
-            <p>&copy; All rights reserved. <br> Design <a class="credit"
-                href="https://www.facebook.com/suhanur.rahman.s" target="_blank">Raihani</a></p>
-          </div>
-        </footer>
-        <script src="js/core/jquery.3.2.1.min.js"></script>
-        <script src="js/core/popper.min.js"></script>
-        <script src="js/core/bootstrap.min.js"></script>
-        <script src="js/now-ui-kit.js?v=1.1.0"></script>
-        <script src="js/aos.js"></script>
-        <script src="scripts/main.js"></script>
+  <script src="js/core/jquery.3.2.1.min.js"></script>
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap.min.js"></script>
+  <script src="js/now-ui-kit.js?v=1.1.0"></script>
+  <script src="js/aos.js"></script>
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    // Fungsi untuk membuka modal gambar
+    function openImageModal(imageSrc) {
+      document.getElementById('imageModal').style.display = 'block';
+      document.getElementById('modalImage').src = imageSrc;
+      document.body.style.overflow = 'hidden'; // Mencegah scrolling saat modal terbuka
+    }
+    
+    // Fungsi untuk menutup modal gambar
+    function closeImageModal() {
+      document.getElementById('imageModal').style.display = 'none';
+      document.body.style.overflow = 'auto'; // Mengembalikan scrolling
+    }
+    
+    // Tutup modal saat mengklik di luar gambar
+    window.onclick = function(event) {
+      const modal = document.getElementById('imageModal');
+      if (event.target == modal) {
+        closeImageModal();
+      }
+    }
+    
+    // Tutup modal dengan tombol ESC
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeImageModal();
+      }
+    });
+  </script>
 </body>
-
 </html>
